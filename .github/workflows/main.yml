@@ -24,3 +24,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo Deploy to production using ${{ secrets.PROD_SECRET }} secret
+      - run: echo this is ready
