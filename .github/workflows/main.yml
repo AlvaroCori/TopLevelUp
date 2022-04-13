@@ -7,19 +7,19 @@ on:
 
 jobs:
 
-  deploy-staging:
+  deploy-dev:
     name: Deploy to develop
     environment:
       name: dev
     runs-on: ubuntu-latest
     steps:
-      - run: echo Deploy to staging using ${{ secrets.dev-secret }}
+      - run: echo Deploy to staging using ${{ secrets.dev-secret }} secret
         
-  deploy-production:
+  deploy-prod:
     name: Deploy to production
     environment:
       name: prod
     needs: [deploy-staging]
     runs-on: ubuntu-latest
     steps:
-      - run: echo Deploy to production using ${{ secrets.prod-secret }}
+      - run: echo Deploy to production using ${{ secrets.prod-secret }} secret
