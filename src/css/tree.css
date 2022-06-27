@@ -1,0 +1,8 @@
+.containerTree{
+    background: rgba(206, 206, 206,0.8);
+}
+.elementTree{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: hsla(61, 100%, 73%, 0.8);
+}
