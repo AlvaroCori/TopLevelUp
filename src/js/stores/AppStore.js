@@ -6,7 +6,7 @@
 const App = require("../components/App");
  var CHANGE_EVENT = 'event';
 
- _items = [];
+ const _items = [];
  var AppStore =  assign({},EventEmitter.prototype,{
     emitChange: function(){
         this.emit(CHANGE_EVENT)

@@ -1,9 +1,14 @@
-var App = require('./components/App');
-var React = require('react');
-const ReactDOM = require('react-dom');
-var AppAPI = require('./utils/AppAPI.js');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import AppAPI from './utils/AppAPI'
+import App from './components/App';
+
 
 ReactDOM.render(
-    <App/>,
-    document.getElementById('app')
-);
+    <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+    document.getElementById('app'));
+
+
+    reportWebVitals();

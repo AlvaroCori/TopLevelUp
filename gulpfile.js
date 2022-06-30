@@ -12,7 +12,7 @@
  });
  gulp.task('copy',async function(){
     gulp.src('src/index.html')
-    .pipe(gulp.dest('dict'));
+    .pipe(gulp.dest('dist'));
     gulp.src('src/css/*.*')
     .pipe(gulp.dest('dist/css'));
     gulp.src('src/js/vendors/*.*')
